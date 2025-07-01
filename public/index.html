@@ -11,6 +11,13 @@
     />
     <title>Induranga Gunasekara - Portfolio</title>
     
+    <!-- HTTPS Redirect -->
+    <script>
+      if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+        location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+      }
+    </script>
+    
     <!-- Cursor.so Integration -->
     <script>
       !function(t,a){var e=t.amplitude||{_q:[],_iq:{}};if(e.invoked)t.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(t,a){t.prototype[a]=function(){return this._q.push([a].concat(Array.prototype.slice.call(arguments,0))),this}},s=function(t,a,e){return function(n){t._q.push([a].concat(Array.prototype.slice.call(arguments,0)))}},o=function(t){for(var a=0;a<g.length;a++)s(t,g[a])},i=function(t){for(var a=0;a<y.length;a++)n(t,y[a])},r=function(t,a){t[a]=function(){t._q.push([a].concat(Array.prototype.slice.call(arguments,0)))}},c=function(t){t._q=[],t._iq={}},u=function(t,a){t[a]=s(t,a+"Identify",c(t))};e.invoked=!0;var d=t.amplitude;e.options=d?d.options||{}:{},t.amplitude=e;for(var l=function(){return this._q.push(["_"+ this,Array.prototype.slice.call(arguments,0)]),this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],v=0;v<p.length;v++)n(l,p[v]);e.Identify=l;for(var g=["clearUserProperties","identify","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties"],m=0;m<g.length;m++)r(e,g[m]);for(var y=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","isNewSession","getSessionId","setSessionId","resetSessionId","getDeviceId","getUserId","setGroup","logEventWithGroups","setGroupProperties","clearAllProps","logEventWithTimestamp","logEventWithGroups","setGroupPropertiesWithGroups","logRevenueV2"],_=0;_<y.length;_++)i(e);o(e),e.getInstance=function(t){return t=(t||"default").toLowerCase(),e._iq[t]||(e._iq[t]={_q:[]},o(e._iq[t])),e._iq[t]},e.runQueuedFunctions=function(){var t;if("function"==typeof e._iq)for(var a=Object.keys(e._iq),n=0;n<a.length;n++)(t=e._iq[a[n]])&&t.runQueuedFunctions&&t.runQueuedFunctions()}}}(window,document);
