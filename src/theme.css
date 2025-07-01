@@ -1,0 +1,141 @@
+:root {
+  /* Light Theme Colors */
+  --primary-dark: #243642;
+  --primary-accent: #387478;
+  --primary-secondary: #629584;
+  --primary-light: #E2F1E7;
+  
+  /* Theme Variables */
+  --bg-color: var(--primary-light);
+  --text-color: var(--primary-dark);
+  --accent-color: var(--primary-accent);
+  --secondary-color: var(--primary-secondary);
+  --card-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --shadow: rgba(36, 54, 66, 0.15);
+  --shadow-hover: rgba(36, 54, 66, 0.25);
+  --gradient-primary: linear-gradient(135deg, var(--primary-accent), var(--primary-secondary));
+  --gradient-secondary: linear-gradient(135deg, var(--primary-secondary), var(--primary-light));
+  --border-color: rgba(56, 116, 120, 0.2);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Colors */
+  --bg-color: #1A1A1A;
+  --text-color: #E2F1E7;
+  --accent-color: #629584;
+  --secondary-color: #387478;
+  --card-bg: #2A2A2A;
+  --nav-bg: rgba(42, 42, 42, 0.95);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --shadow-hover: rgba(0, 0, 0, 0.6);
+  --gradient-primary: linear-gradient(135deg, #629584, #387478);
+  --gradient-secondary: linear-gradient(135deg, #387478, #243642);
+  --border-color: rgba(98, 149, 132, 0.3);
+}
+
+/* Global Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Utility Classes */
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
