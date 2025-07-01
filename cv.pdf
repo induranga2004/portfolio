@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Induranga Gunasekara - CV</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #387478; }
+        h2 { color: #629584; border-bottom: 2px solid #629584; }
+        .contact { background: #E2F1E7; padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Induranga Gunasekara</h1>
+    <div class="contact">
+        <p><strong>Email:</strong> induranga.learning@gmail.com</p>
+        <p><strong>Phone:</strong> +94 75 858 0439</p>
+        <p><strong>GitHub:</strong> https://github.com/induranga2004</p>
+        <p><strong>LinkedIn:</strong> https://linkedin.com/in/induranga-gunasekara</p>
+    </div>
+    
+    <h2>Professional Summary</h2>
+    <p>Full Stack Developer | AI Chatbot Author | Open Source Contributor with expertise in modern web technologies and AI integration.</p>
+    
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>Frontend:</strong> React.js, JavaScript, TypeScript, HTML5, CSS3</li>
+        <li><strong>Backend:</strong> Node.js, Express.js, MongoDB, REST APIs</li>
+        <li><strong>AI Integration:</strong> OpenAI API, Chatbot Development, NLP</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Jira, NPM, Postman</li>
+    </ul>
+    
+    <h2>Projects</h2>
+    <h3>chatbot-ai-db (NPM Package)</h3>
+    <p>NPM package to connect AI models with database queries, enabling seamless integration between chatbots and data sources.</p>
+    
+    <h3>Portfolio Website</h3>
+    <p>Modern and responsive personal portfolio website built with React.js, featuring advanced CSS animations and theme switching.</p>
+    
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaboration opportunities or project discussions!</p>
+</body>
+</html>
