@@ -2,7 +2,7 @@
   "name": "induranga-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://induranga2004.github.io/portfolio",
+  "homepage": "https://induranga.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.16.4",
